@@ -2,7 +2,7 @@
 :root {
   --bgColor: #333;
   --textPrimary: #ffec27;
-  --textSecondary: #f6f5f2;
+  --textSecondary: #8d8d8b;
   --primaryColor: #e01552;
 }
 body {
@@ -104,8 +104,8 @@ div.word {
   height: 1.6rem;
   background: var(--primaryColor);
   position: fixed;
-  top: 198px;
-  left: 18px;
+  top: 218px;
+  left: 240px;
   animation: blink 0.3s infinite;
 }
 #game:focus #cursor {
