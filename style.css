@@ -103,11 +103,11 @@ div.word {
   width: 2px;
   height: 1.6rem;
   background: var(--primaryColor);
-  position: fixed;
-  top: 218px;
-  left: 240px;
+  position: absolute; /* changed from fixed */
   animation: blink 0.3s infinite;
+  pointer-events: none;
 }
+
 #game:focus #cursor {
   display: block;
 }
@@ -120,4 +120,8 @@ div.word {
 }
 #game.over #focus-error {
   display: none;
+}
+div#game {
+  position: relative;
+  /* rest of your existing styles */
 }
